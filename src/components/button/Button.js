@@ -22,8 +22,6 @@ export const Button = (props) => {
 
     return (
         <button className = {button} 
-        // onKeyDown = {handleKeyDown}
-        // onKeyUp = {handleKeyUp}
         onMouseDown = {() => buttonModifier(`h-100 music-button-${props.name} w-100 btn btn-primary`)}
         onMouseUp = {() => buttonModifier(`h-100 music-button-${props.name} w-100 btn btn-secondary`)}
         onMouseLeave = {() => buttonModifier(`h-100 music-button-${props.name} w-100 btn btn-secondary`)} 

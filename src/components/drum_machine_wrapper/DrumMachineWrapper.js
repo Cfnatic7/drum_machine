@@ -1,5 +1,6 @@
 import './DrumMachineWrapper.css';
 import { ButtonWrapper } from '../button_wrapper/ButtonWrapper';
+import { ConfigurationWrapper } from '../configuration_wrapper/ConfigurationWrapper';
 
 export const DrumMachineWrapper = () => {
     return (
@@ -9,7 +10,9 @@ export const DrumMachineWrapper = () => {
                 <div className = 'col-8'>
                     <ButtonWrapper/>
                 </div>
-                <div className = 'col-4'></div>
+                <div className = 'col-4'>
+                    <ConfigurationWrapper/>
+                </div>
             </div>
         </div>
     )

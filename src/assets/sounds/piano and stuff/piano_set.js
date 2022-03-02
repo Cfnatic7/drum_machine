@@ -1,4 +1,4 @@
-export const piano_set = {
+export const pianoSet = {
     clap: new Audio('./707-clap.wav'),
     bigVergyClap: new Audio('./big-vergy-clap.vaw'),
     brightClap: new Audio('./brightclap.wav'),

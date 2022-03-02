@@ -1,4 +1,4 @@
-export const string_set = {
+export const stringSet = {
     ghostSDS: new Audio('./2ghostsds.wav'),
     sd909: new Audio('./909sd.wav'),
     acousticSnare: new Audio('./acoustic_snare.wav'),
