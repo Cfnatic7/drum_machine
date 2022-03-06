@@ -1,6 +1,7 @@
 import './ConfigurationWrapper.css';
 import { changeVolume, changeSet } from '../../redux/store';
 import { useSelector, useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 
 export const ConfigurationWrapper = () => {
     const dispatch = useDispatch();
@@ -8,10 +9,14 @@ export const ConfigurationWrapper = () => {
         return state.counter.nameOfTrack
         });
     const setNumber = useSelector(state => state.counter.set);
+    const volume = useSelector(state => state.counter.volume);
+    useEffect( () => {
+        document.getElementById('vol').defaultValue = volume;
+    }, []);
     return (
         <div className = 'configuration-wrapper container h-100 d-flex flex-column justify-content-around'>
             <div className = 'row justify-items-center'>
-                <label htmlFor = 'vol'><h4 className = 'text-center'>Volume</h4></label>
+                <label htmlFor = 'vol'><h4 className = 'text-center'>Volume: {volume}</h4></label>
                 <input type = 'range' id = 'vol' name = 'vol' min = '0' max = '1' step = '0.01' className = 'form-control'
                 onChange = {(event) => {
                     dispatch(changeVolume(parseFloat(event.target.value)));

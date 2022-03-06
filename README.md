@@ -1,10 +1,15 @@
-# Getting Started with Create React App
+# Drum Machine
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a training project made for freecodecamp's front end frameworks course.
+
+# Technologies used:
+- React
+- react-redux
+- bootstrap
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory (after installing dependencies), you can run:
 
 ### `npm start`
 

@@ -14,7 +14,7 @@ export const Button = (props) => {
         if (event.key === props.name) {
             buttonModifier(`h-100 music-button-${props.name} w-100 btn btn-primary`);
             dispatch(changeNameOfTrack(props.audioName));
-            console.log(audio.play());
+            audio.play();
         }
     }
 
@@ -37,7 +37,7 @@ export const Button = (props) => {
         onMouseDown = {() => {
             buttonModifier(`h-100 music-button-${props.name} w-100 btn btn-primary`);
             dispatch(changeNameOfTrack(props.audioName));
-            console.log(audio.play());
+            audio.play();
         }}
         onMouseUp = {() => buttonModifier(`h-100 music-button-${props.name} w-100 btn btn-secondary`)}
         onMouseLeave = {() => buttonModifier(`h-100 music-button-${props.name} w-100 btn btn-secondary`)} 
