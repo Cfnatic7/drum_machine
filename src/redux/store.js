@@ -4,7 +4,7 @@ const musicSlice = createSlice({
   name: 'music',
   initialState: {
     volume: 0.3,
-    set: 0,
+    set: 1,
     nameOfTrack: ''
   },
   reducers: {
