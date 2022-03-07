@@ -8,7 +8,6 @@ export const Button = (props) => {
     const volume = useSelector(state => state.counter.volume);
     const [button, buttonModifier] = useState(`h-100 music-button-${props.name} w-100 btn btn-secondary`);
     const audio = new Audio(props.path);
-    audio.volume = volume;
 
     const handleKeyDown = event => {
         if (event.key === props.name) {
@@ -24,6 +23,7 @@ export const Button = (props) => {
         }
     }
     useEffect(() => {
+        audio.volume = volume;
         document.addEventListener('keydown', handleKeyDown);
         document.addEventListener('keyup', handleKeyUp);
         return () => {
