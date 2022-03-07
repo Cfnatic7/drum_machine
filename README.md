@@ -1,10 +1,9 @@
 # Drum Machine
 
-This is a training project made for freecodecamp's front end frameworks course.
+This is a training project made for freecodecamp's front end frameworks course. You can check the deployment [here](https://cfnatic7.github.io/drum_machine/).
 
 # Technologies used:
 - React
-- react-redux
 - bootstrap
 
 ## Available Scripts
